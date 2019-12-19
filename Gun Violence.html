@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+
+<head>
+    <Title> Homepage </Title>
+    <style>
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+    ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}    
+        
+</style>
+</head>
+
+<body bgcolor="#9470AF">
+    <h1>
+    <p style="font-family: sans-serif">   
+    Gun Violence is a big problem in today's society. Thousands and thousands of Americans have died due to this problem. 
+    </h1>
+    <p/>    
+    <nav>
+    </nav>
+ 
+
+   <ul>
+  <li><a class="active" href= "index.html">Home</a></li>
+  <li><a href="Portfolio.html">Portfolio</a></li>
+  <li><a href="contact.html" >Contact</a></li>
+  <li><a href="Explanation.html"s>Explanation</a></li>
+  <li><a href="Gun%20Violence.html">Gun Violence</a>
+</ul>
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="images/Gun1.png" style="width:50%">
+  <img class="mySlides" src="images/Gun2.png" style="width:50%">
+  <img class="mySlides" src="images/Gun3.png" style="width:50%">
+  <img class="mySlides" src="images/Gun4.png" style="width:50%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+<h2> Many Americans die every year because of gun violence and is the leading country that have this problem. Even with plenty of evidence pointing out that stricter gun laws would help reduce the amount of individuals dying, we still done nothing to achieve the goal of stopping gun violence. </h2>
+    </div>
+</body>
+
+</html>
